@@ -1,7 +1,5 @@
-set number
-set relativenumber
+inoremap jj <Esc>
 filetype plugin indent on          " filetype detection and settings
-syntax on                          " syntax highlighting
 silent! runtime macros/matchit.vim " matchit comes with Vim
 set nocompatible                   " not strictly necessary but useful in some scenarii
 set backspace=indent,eol,start     " let the backspace key work "normally"
@@ -13,3 +11,9 @@ set switchbuf=useopen,usetab       " better behavior for the quickfix window and
 set tags=./tags;/,tags;/           " search tags files efficiently
 set wildmenu                       " better command line completion, shows a list of matches
 nnoremap gb :buffers<CR>:sb<Space> " quick buffer navigation
+set relativenumber
+set number
+call plug#begin()
+Plug 'maxmellon/vim-jsx-pretty'
+call plug#end()
+set clipboard=unnamedplus
