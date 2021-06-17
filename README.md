@@ -1,16 +1,19 @@
 # .vimrc
 
-Vimrc config file ~/.vimrc
+~/.vimrc
 
+### Shortcuts
+    jj : Escape shortcut
+    
 ```
 inoremap jj <Esc>
 filetype plugin indent on          " filetype detection and settings
-silent! runtime macros/matchit.vim " matchit comes with Vim
-set nocompatible                   " not strictly necessary but useful in some scenarii
+silent! runtime macros/matchit.vim 
+set nocompatible                   
 set backspace=indent,eol,start     " let the backspace key work "normally"
 set hidden                         " hide unsaved buffers
 set incsearch                      " incremental search rules
-set laststatus=2                   " not strictly necessary but good for consistency
+set laststatus=2                   
 set ruler                          " shows line number in the status line
 set switchbuf=useopen,usetab       " better behavior for the quickfix window and :sb
 set tags=./tags;/,tags;/           " search tags files efficiently
