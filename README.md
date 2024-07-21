@@ -1,28 +1,28 @@
-# .vimrc
+# Alacritty + NVIM Configuration
 
-~/.vimrc
+This repository contains my personal configuration files for [Neovim](https://neovim.io/), a GPU-accelerated terminal emulator. Additionally, I have included some configurations from my Neovim setup, specifically `init.lua` and `nvim/plugins/init.lua`.
 
-### Shortcuts
-    jj : Escape shortcut
-    
-```
-inoremap jj <Esc>
-filetype plugin indent on          " filetype detection and settings
-silent! runtime macros/matchit.vim 
-set nocompatible                   
-set backspace=indent,eol,start     " let the backspace key work "normally"
-set hidden                         " hide unsaved buffers
-set incsearch                      " incremental search rules
-set laststatus=2                   
-set ruler                          " shows line number in the status line
-set switchbuf=useopen,usetab       " better behavior for the quickfix window and :sb
-set tags=./tags;/,tags;/           " search tags files efficiently
-set wildmenu                       " better command line completion, shows a list of matches
-nnoremap gb :buffers<CR>:sb<Space> " quick buffer navigation
-set relativenumber
-set number
-call plug#begin()
-Plug 'maxmellon/vim-jsx-pretty'
-call plug#end()
-set clipboard=unnamedplus
-```
+## Files Included
+
+- `alacritty.yml`: Main Alacritty configuration file.
+- `nvim/init.lua`: Neovim initialization settings.
+- `nvim/plugins/init.lua`: Plugin configurations for Neovim.
+
+## Features
+
+- **Alacritty Customization**: Enhanced visual settings, keybindings, and performance tweaks.
+- **Neovim Integration**: Seamlessly integrated Neovim configurations for a consistent development environment.
+
+## Usage
+
+1. **Clone the Repository**
+
+    ```
+    git clone https://github.com/sfaizh/alacritty-config.git
+    mv .config/nvim ~/.config/nvim
+    ```
+
+## Requirements
+
+- [Alacritty](https://github.com/alacritty/alacritty)
+- [Neovim](https://neovim.io/)
