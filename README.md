@@ -4,7 +4,7 @@ This repository contains my personal configuration files for [Neovim](https://ne
 
 ## Files Included
 
-- `alacritty.yml`: Main Alacritty configuration file.
+- `alacritty/alacritty.toml`: Main Alacritty configuration file.
 - `nvim/init.lua`: Neovim initialization settings.
 - `nvim/plugins/init.lua`: Plugin configurations for Neovim.
 
