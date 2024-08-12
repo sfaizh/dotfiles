@@ -2,7 +2,7 @@ import = [
     "~/.config/alacritty/themes/themes/gruvbox_light.toml"
 ]
 [env]
-TERM = "alacritty"
+TERM = "xterm-245color"
 [window]
 padding.x = 10
 padding.y = 10
@@ -13,4 +13,4 @@ option_as_alt = "Both"
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
-size = 19
+size = 13
