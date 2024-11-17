@@ -1,6 +1,5 @@
-# Alacritty + NVIM Configuration
-
-This repository contains my personal configuration files for [Neovim](https://neovim.io/), a GPU-accelerated terminal emulator. Additionally, I have included some configurations from my Neovim setup, specifically `init.lua` and `nvim/plugins/init.lua`.
+# Dotfiles
+This repository contains my personal configuration files for my [Neovim](https://neovim.io/) configuration.
 
 ## Files Included
 
